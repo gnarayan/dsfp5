@@ -1,3 +1,7 @@
+# astrometry.net source tarball 
+astrometry.net-latest.tar.gz
+astrometry.net-*/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
