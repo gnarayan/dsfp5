@@ -10,10 +10,22 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash ./Miniconda3-latest-Linux-x86_64.sh
 
 # The installation should prompt your for a path and permission to edit your .bash_profile.
-# If it worked, you should see something like this:
+# If it worked, you should see something like this in your .bash_profile:
 
-# added by Anaconda3 4.4.0 installer
 export PATH="/Users/gnarayan/anaconda3/bin:$PATH"
+
+-----------------------------------------------------------------------------------------
+# Make some local directories to store the software we'll install for this session of the DSFP
+
+mkdir -p ~/local/bin
+mkdir -p ~/local/lib
+mkdir -p ~/local/include
+mkdir -p ~/local/share
+
+# make sure this is added to your .bash_profile
+export PATH="~/local/bin:$PATH"
+
+# Now that you've installed miniconda and made directories for your path, startup a new bash shell
 
 -----------------------------------------------------------------------------------------
 ## Edit your .condarc ##
@@ -76,4 +88,13 @@ export LDFLAGS="-L/usr/local/lib -L/sw/lib"
 -----------------------------------------------------------------------------------------
 ## Setting up astrometry.net ##
 
+wget http://astrometry.net/downloads/astrometry.net-latest.tar.bz2
+tar xjf astrometry.net-latest.tar.bz2
+cd astrometry.net-*
 
+make
+make py
+make extra
+make install
+
+-----------------------------------------------------------------------------------------
