@@ -104,4 +104,9 @@ make install
 # same field - some point you might want all
 
 wget http://broiler.astrometry.net/~dstn/4200/index-4203-35.fits
+wget http://broiler.astrometry.net/~dstn/4200/index-4202-35.fits
+wget http://broiler.astrometry.net/~dstn/4200/index-4203-35.fits
+wget http://broiler.astrometry.net/~dstn/4200/index-4204-35.fits
+wget http://broiler.astrometry.net/~dstn/4200/index-4205-08.fits
+wget http://broiler.astrometry.net/~dstn/4200/index-4206-08.fits
 -----------------------------------------------------------------------------------------
