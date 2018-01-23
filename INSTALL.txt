@@ -98,3 +98,10 @@ make extra
 make install
 
 -----------------------------------------------------------------------------------------
+## Get the index file
+
+# there's many, but we don't need all of them for this exercise, since it's the
+# same field - some point you might want all
+
+wget http://broiler.astrometry.net/~dstn/4200/index-4203-35.fits
+-----------------------------------------------------------------------------------------
