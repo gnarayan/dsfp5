@@ -44,6 +44,7 @@ show_channel_urls: True
 
 conda create -n dsfp5 ds9 wcstools numpy scipy astropy astroquery reproject matplotlib ipyparallel notebook cfitsio
 source activate dsfp5
+pip install ois
 python -m ipykernel install --user --name dsfp5 --display-name "Python (dsfp5)"
 
 -----------------------------------------------------------------------------------------
