@@ -107,5 +107,7 @@ dependencies:
   - cfitsio=3.370=1
   - ds9=7.5=0
   - wcstools=3.9.5=0
+  - pip:
+    - ois==0.1.3
 prefix: /Users/gnarayan/anaconda3/envs/dsfp5
 
